@@ -1,0 +1,598 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+
+font-family: Arial, "Segoe UI", sans-serif;
+
+min-height: 100vh;
+
+background:
+linear-gradient(
+rgba(255, 247, 235, 0.88),
+rgba(255, 226, 190, 0.92)
+),
+url("img/personas.png");
+
+background-size: cover;
+
+background-position: center;
+
+background-attachment: fixed;
+
+color: #4a3425;
+
+padding: 25px;
+}
+
+/* =========================================
+BOTÓN VOLVER
+========================================= */
+
+.volver {
+
+display: inline-block;
+
+padding: 12px 25px;
+
+background: #8b5e3c;
+
+color: white;
+
+text-decoration: none;
+
+border-radius: 25px;
+
+font-weight: bold;
+
+box-shadow: 0 5px 12px rgba(80,45,20,0.2);
+
+transition: 0.3s;
+
+}
+
+.volver:hover {
+
+background: #c17f4a;
+
+transform: scale(1.05);
+
+}
+
+/* =========================================
+ENCABEZADO
+========================================= */
+
+header {
+
+text-align: center;
+
+margin: 35px auto 40px;
+
+}
+
+.titulo {
+
+max-width: 900px;
+
+margin: auto;
+
+padding: 35px;
+
+background: rgba(255,255,255,0.97);
+
+border-radius: 30px;
+
+border: 5px solid #d99a5b;
+
+box-shadow:
+0 12px 30px rgba(80,45,20,0.2);
+
+}
+
+.huella {
+
+font-size: 50px;
+
+margin-bottom: 8px;
+
+}
+
+.titulo h1 {
+
+color: #704522;
+
+font-size: 42px;
+
+margin-bottom: 15px;
+
+text-shadow: 2px 2px 0 #ffe0b2;
+
+}
+
+.titulo p {
+
+color: #7b5a42;
+
+font-size: 18px;
+
+line-height: 1.6;
+
+}
+
+/* =========================================
+CONTENEDOR
+========================================= */
+
+.contenedor {
+
+width: 100%;
+
+max-width: 1100px;
+
+margin: auto;
+
+}
+
+/* =========================================
+RESUMEN
+========================================= */
+
+.resumen {
+
+background: white;
+
+border-radius: 25px;
+
+padding: 25px 30px;
+
+display: flex;
+
+align-items: center;
+
+gap: 25px;
+
+border-left: 8px solid #d99a5b;
+
+box-shadow:
+0 10px 25px rgba(80,45,20,0.15);
+
+margin-bottom: 40px;
+
+}
+
+.resumen-icono {
+
+font-size: 55px;
+
+}
+
+.resumen h2 {
+
+color: #704522;
+
+margin-bottom: 8px;
+
+}
+
+.resumen p {
+
+color: #666;
+
+line-height: 1.5;
+
+}
+
+.estrellas-grandes {
+
+margin-left: auto;
+
+color: #f5a623;
+
+font-size: 25px;
+
+white-space: nowrap;
+
+}
+
+.estrellas-grandes span {
+
+display: block;
+
+color: #704522;
+
+font-size: 20px;
+
+font-weight: bold;
+
+margin-top: 5px;
+
+}
+
+/* =========================================
+SUBTÍTULO
+========================================= */
+
+.subtitulo {
+
+text-align: center;
+
+color: #704522;
+
+font-size: 30px;
+
+margin-bottom: 25px;
+
+}
+
+/* =========================================
+GRID DE RESEÑAS
+========================================= */
+
+.reseñas-grid {
+
+display: grid;
+
+grid-template-columns: repeat(3, 1fr);
+
+gap: 25px;
+
+margin-bottom: 45px;
+
+}
+
+/* =========================================
+TARJETA DE RESEÑA
+========================================= */
+
+.reseña {
+
+background: rgba(255,255,255,0.97);
+
+padding: 25px;
+
+border-radius: 22px;
+
+border-top: 6px solid #d99a5b;
+
+box-shadow:
+0 10px 25px rgba(80,45,20,0.15);
+
+transition: 0.3s;
+
+}
+
+.reseña:hover {
+
+transform: translateY(-7px);
+
+box-shadow:
+0 16px 30px rgba(80,45,20,0.22);
+
+}
+
+.usuario {
+
+display: flex;
+
+align-items: center;
+
+gap: 15px;
+
+margin-bottom: 18px;
+
+}
+
+.avatar {
+
+width: 55px;
+
+height: 55px;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+background: #fff0d8;
+
+border-radius: 50%;
+
+font-size: 30px;
+
+}
+
+.usuario h3 {
+
+color: #704522;
+
+margin-bottom: 5px;
+
+}
+
+.usuario span {
+
+color: #f5a623;
+
+letter-spacing: 2px;
+
+}
+
+.reseña > p {
+
+color: #555;
+
+line-height: 1.6;
+
+font-style: italic;
+
+}
+
+/* =========================================
+FORMULARIO
+========================================= */
+
+.formulario {
+
+max-width: 750px;
+
+margin: auto;
+
+background: white;
+
+padding: 35px;
+
+border-radius: 30px;
+
+border: 4px solid #d99a5b;
+
+box-shadow:
+0 12px 30px rgba(80,45,20,0.2);
+
+text-align: center;
+
+}
+
+.formulario-icono {
+
+font-size: 50px;
+
+margin-bottom: 5px;
+
+}
+
+.formulario h2 {
+
+color: #704522;
+
+font-size: 30px;
+
+margin-bottom: 8px;
+
+}
+
+.formulario > p {
+
+color: #777;
+
+margin-bottom: 25px;
+
+}
+
+/* CAMPOS */
+
+.campo {
+
+text-align: left;
+
+margin-bottom: 18px;
+
+}
+
+.campo label {
+
+display: block;
+
+color: #704522;
+
+font-weight: bold;
+
+margin-bottom: 7px;
+
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+
+width: 100%;
+
+padding: 13px;
+
+border: 2px solid #edc28f;
+
+border-radius: 12px;
+
+font-family: inherit;
+
+font-size: 15px;
+
+outline: none;
+
+background: #fffaf3;
+
+color: #4a3425;
+
+transition: 0.3s;
+
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+
+border-color: #c17f4a;
+
+box-shadow: 0 0 0 3px rgba(193,127,74,0.15);
+
+}
+
+.campo textarea {
+
+resize: vertical;
+
+}
+
+/* =========================================
+BOTÓN PUBLICAR
+========================================= */
+
+.formulario button {
+
+border: none;
+
+padding: 14px 30px;
+
+background: linear-gradient(
+135deg,
+#d99a5b,
+#a86f42
+);
+
+color: white;
+
+border-radius: 25px;
+
+font-size: 17px;
+
+font-weight: bold;
+
+cursor: pointer;
+
+box-shadow:
+0 6px 15px rgba(80,45,20,0.2);
+
+transition: 0.3s;
+
+}
+
+.formulario button:hover {
+
+background: #704522;
+
+transform: scale(1.05);
+
+}
+
+/* =========================================
+MENSAJE
+========================================= */
+
+.mensaje {
+
+margin-top: 20px;
+
+padding: 12px;
+
+border-radius: 12px;
+
+background: #fff0d8;
+
+color: #704522;
+
+font-weight: bold;
+
+}
+
+/* =========================================
+FOOTER
+========================================= */
+
+footer {
+
+text-align: center;
+
+padding: 35px 10px 15px;
+
+color: #704522;
+
+font-weight: bold;
+
+}
+
+footer span {
+
+font-size: 14px;
+
+color: #8b5e3c;
+
+}
+
+/* =========================================
+CELULARES
+========================================= */
+
+@media (max-width: 800px) {
+
+body {
+
+
+padding: 15px;
+
+
+}
+
+.titulo {
+
+
+padding: 25px 20px;
+
+
+}
+
+.titulo h1 {
+
+
+font-size: 32px;
+
+
+}
+
+.resumen {
+
+
+flex-direction: column;
+
+text-align: center;
+
+
+}
+
+.estrellas-grandes {
+
+margin-left: 0;
+
+
+}
+
+.reseñas-grid {
+
+
+grid-template-columns: 1fr;
+
+}
+
+.formulario {
+
+padding: 25px 20px;
+}
+
+}

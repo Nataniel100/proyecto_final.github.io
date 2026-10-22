@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reseñas | Patitas Geniales</title>
+  <link rel="stylesheet" href="reseñas.css">
+</head>
+
+<body>
+
+  <!-- BOTÓN VOLVER -->
+
+  <a href="index.html" class="volver">
+    ⬅ Volver al inicio
+  </a>
+
+  <!-- ENCABEZADO -->
+
+  <header>
+
+```
+<div class="titulo">
+
+  <div class="huella">🐾</div>
+
+  <h1>⭐ Reseñas de Patitas Geniales</h1>
+
+  <p>
+    ¡Queremos conocer tu experiencia!
+    Comparte tu opinión sobre nuestra página y el entrenamiento
+    de tu mascota.
+  </p>
+
+</div>
+```
+
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+
+  <main class="contenedor">
+
+```
+<!-- RESUMEN DE RESEÑAS -->
+
+<section class="resumen">
+
+  <div class="resumen-icono">
+    🐶
+  </div>
+
+  <div>
+
+    <h2>¿Qué opinan nuestros visitantes?</h2>
+
+    <p>
+      Tu opinión nos ayuda a mejorar Patitas Geniales
+      y a crear nuevos contenidos para el entrenamiento canino.
+    </p>
+
+  </div>
+
+  <div class="estrellas-grandes">
+    ⭐⭐⭐⭐⭐
+    <span>5.0</span>
+  </div>
+
+</section>
+
+
+<!-- RESEÑAS -->
+
+<section class="lista-reseñas">
+
+  <h2 class="subtitulo">💬 Opiniones de nuestros usuarios</h2>
+
+
+  <div class="reseñas-grid">
+
+
+    <!-- RESEÑA 1 -->
+
+    <article class="reseña">
+
+      <div class="usuario">
+        <div class="avatar">🐶</div>
+
+        <div>
+          <h3>Usuario Patitas</h3>
+          <span>★★★★★</span>
+        </div>
+      </div>
+
+      <p>
+        "Me gustaron mucho los videos porque explican de manera
+        sencilla cómo enseñar los comandos básicos a mi mascota."
+      </p>
+
+    </article>
+
+
+    <!-- RESEÑA 2 -->
+
+    <article class="reseña">
+
+      <div class="usuario">
+        <div class="avatar">🐾</div>
+
+        <div>
+          <h3>Amante de los perros</h3>
+          <span>★★★★★</span>
+        </div>
+      </div>
+
+      <p>
+        "La tabla de seguimiento me parece muy útil para llevar
+        un mejor control del progreso de mi cachorro."
+      </p>
+
+    </article>
+
+
+    <!-- RESEÑA 3 -->
+
+    <article class="reseña">
+
+      <div class="usuario">
+        <div class="avatar">🦴</div>
+
+        <div>
+          <h3>Entrenador principiante</h3>
+          <span>★★★★☆</span>
+        </div>
+      </div>
+
+      <p>
+        "La página tiene información clara y las explicaciones
+        ayudan bastante cuando uno está comenzando a entrenar."
+      </p>
+
+    </article>
+
+
+  </div>
+
+</section>
+
+
+<!-- FORMULARIO -->
+
+<section class="formulario">
+
+  <div class="formulario-icono">
+    ✍️
+  </div>
+
+  <h2>Déjanos tu reseña</h2>
+
+  <p>
+    Cuéntanos qué te pareció Patitas Geniales.
+  </p>
+
+
+  <form id="formularioResena">
+
+    <div class="campo">
+
+      <label for="nombre">
+        👤 Tu nombre
+      </label>
+
+      <input
+        type="text"
+        id="nombre"
+        placeholder="Escribe tu nombre"
+        required
+      >
+
+    </div>
+
+
+    <div class="campo">
+
+      <label for="calificacion">
+        ⭐ Calificación
+      </label>
+
+      <select id="calificacion" required>
+
+        <option value="">Selecciona una calificación</option>
+
+        <option value="5">⭐⭐⭐⭐⭐ Excelente</option>
+
+        <option value="4">⭐⭐⭐⭐ Muy bueno</option>
+
+        <option value="3">⭐⭐⭐ Bueno</option>
+
+        <option value="2">⭐⭐ Regular</option>
+
+        <option value="1">⭐ Puede mejorar</option>
+
+      </select>
+
+    </div>
+
+
+    <div class="campo">
+
+      <label for="comentario">
+        💬 Tu comentario
+      </label>
+
+      <textarea
+        id="comentario"
+        rows="5"
+        placeholder="Escribe aquí tu opinión..."
+        required
+      ></textarea>
+
+    </div>
+
+
+    <button type="submit">
+      🐾 Publicar reseña
+    </button>
+
+  </form>
+
+
+  <div id="mensaje" class="mensaje"></div>
+
+</section>
+```
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+
+  <footer>
+
+```
+🐾 Patitas Geniales
+
+<br>
+
+<span>
+  Aprende a ser el mejor adiestrador
+</span>
+```
+
+  </footer>
+
+  <!-- JAVASCRIPT -->
+
+  <script>
+
+    const formulario = document.getElementById("formularioResena");
+    const mensaje = document.getElementById("mensaje");
+
+    formulario.addEventListener("submit", function(event) {
+
+      event.preventDefault();
+
+      const nombre = document.getElementById("nombre").value;
+      const calificacion = document.getElementById("calificacion").value;
+
+      mensaje.innerHTML =
+        "✅ ¡Gracias, " + nombre +
+        "! Tu reseña de " + calificacion +
+        " estrellas fue registrada correctamente.";
+
+      formulario.reset();
+
+    });
+
+  </script>
+
+</body>
+</html>
